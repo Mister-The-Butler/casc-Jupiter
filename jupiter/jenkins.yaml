@@ -4,9 +4,7 @@ jenkins:
   - "JNLP4-connect"
   - "OperationsCenter2"
   - "Ping"
-  authorizationStrategy:
-    loggedInUsersCanDoAnything:
-      allowAnonymousRead: false
+  authorizationStrategy: "cloudBeesRoleBasedAccessControl"
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
@@ -28,7 +26,7 @@ jenkins:
   scmCheckoutRetryCount: 0
   securityRealm: "operationsCenter"
   slaveAgentPort: 50000
-  systemMessage: "Welcome to Project Jupiter! Config v3.3."
+  systemMessage: "Welcome to Project Jupiter! Config v3.1."
   updateCenter:
     sites:
     - id: "core-mm-offline"
@@ -50,7 +48,7 @@ beekeeper:
 license:
   certificate: |
     -----BEGIN CERTIFICATE-----
-    MIIRTDCCEDSgAwIBAgIGAX8tm0E3MA0GCSqGSIb3DQEBBQUAMIICdDERMA8GCisG
+    MIIRTDCCEDSgAwIBAgIGAX8uxdFTMA0GCSqGSIb3DQEBBQUAMIICdDERMA8GCisG
     AQQBgql/AQETATMxMDAuBgorBgEEAYKpfwECEyA2MzI3MzE0YTZlY2IzMDg3YzNj
     ZGMzNDY2MWQxMGMzYzEVMBMGCysGAQQBgql/AQsOEwR0cnVlMRUwEwYLKwYBBAGC
     qX8BCw0TBHRydWUxFTATBgsrBgEEAYKpfwELEBMEdHJ1ZTEVMBMGCysGAQQBgql/
@@ -64,7 +62,7 @@ license:
     CysGAQQBgql/AQsVEwR0cnVlMRMwEQYKKwYBBAGCqX8BAxMDMTAwMRUwEwYKKwYB
     BAGCqX8BDhMFMTAwMDAxFTATBgorBgEEAYKpfwEJEwVmYWxzZTESMBAGA1UEAxMJ
     Q2xvdWRCZWVzMQkwBwYDVQQLEwAxFjAUBgsrBgEEAYKpfwELGBMFZmFsc2UwHhcN
-    MjIwMjI0MjAyMDIzWhcNMjIwMjI3MjIyMDIzWjCCAp0xEjAQBgNVBAMMCUNsb3Vk
+    MjIwMjI1MDE0NjMwWhcNMjIwMjI4MDM0NjMwWjCCAp0xEjAQBgNVBAMMCUNsb3Vk
     QmVlczESMBAGA1UECwwJQ2xvdWRCZWVzMREwDwYKKwYBBAGCqX8BAQwBMzEwMC4G
     CisGAQQBgql/AQIMIGUwZWZhNDYyODM5M2ZkNjliNzY2MzhlYmMxZmRlZThkMTQw
     MgYKKwYBBAGCqX8BBgwkZWZmYTVkNjUtYWM3My00ZTU0LTgxN2MtZmQ4OGY2M2U1
@@ -137,12 +135,12 @@ license:
     c1pGMHJkTE80Y2paYURNT1pQN25JYTBsYk1SY3ROOXdXUWVGTWVzN1R2WkdxUUQ3
     bUljSHVoagpMb2JoTkt3U1ZuNkp2QUpJNzhLZnhielNRbnFiVzJ3OEtvUkhkQT09
     Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0KCjANBgkqhkiG9w0BAQUFAAOCAQEA
-    vfuyBUk3URfTONSwSnMxZRwAMJJvuXjbHYvi6C4TTd2PuhBji5s/aeRtM9q81q4J
-    blos9ANYo78jubDhSj/2MtY3Cx4WnGoEh+4pNG7wt0jmyraJXjAhRiTCgMm4YWPb
-    ujw2LiV4L2QcVrJTgLO4jOCLCOT4SMVytSBiqYxLiPIfmGj/jUbgtZKgY7fDLlfF
-    srDLF5hLhqpRvGGuYJyppL4AP/F39d9fc3Xvn9GW2n3R+a0HK79oWQ/4r/71eHrP
-    NL1ccdKpmBxskR3dRFgVB4m1ZSbzLsr2Zjd8CTxPL/md1oheMJOcE9hG2dxS24vb
-    nHpBUfIvMSmkv8bJJ2PnNQ==
+    RSZgeQnO+1y3QMFgQ4BNQCqWpUuE/8zoFpvK29tO+sjS9e17CDa7sJ4L7e1F6ljL
+    WtgPK7rtMvTnQ+A7yMfVNbLcxamnR/cxY2TQ+DOtb6Dw0vEtYmQvM528bU/nLHA2
+    R4+w5h5Asxy8Rjob7WpOR+XZc/q4eCuL2U2sW4jt3Q+fvtJYr9lUcQrz2N8aqbNW
+    TXCvYYFw1KncLMQ3VYLFeDeeZuagg5AOFzNRTgaoqPEjieiraoYdufaO6yDxmurW
+    rhvP6MaRVujGt+TWZVot6thspjK50g/2qrQ/BqfzJkYWW+jSM+841bON5psGClGE
+    zatbnSU5HU8+skiF2UDBwg==
     -----END CERTIFICATE-----
   key: |
     -----BEGIN RSA PRIVATE KEY-----
