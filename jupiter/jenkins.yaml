@@ -28,7 +28,7 @@ jenkins:
   scmCheckoutRetryCount: 0
   securityRealm: "operationsCenter"
   slaveAgentPort: 50000
-  systemMessage: "Welcome to Project Jupiter! Config v2."
+  systemMessage: "Welcome to Project Jupiter! Config v3."
   updateCenter:
     sites:
     - id: "core-mm-offline"
