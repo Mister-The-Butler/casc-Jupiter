@@ -1,0 +1,10 @@
+jenkins:
+  systemMessage: "Configured using casc-ptc bundle"
+globalCloudBeesPipelineTemplateCatalog:
+  catalogs:
+  - branchOrTag: "main"
+    scm:
+      git:
+        id: "803ec25b-d0f2-4316-a0c6-d8d854c81a2b"
+        remote: "https://github.com/Mister-The-Butler/simple-template-catalog.git"
+    updateInterval: "1d"
